@@ -4,6 +4,8 @@ gem "rails"
 gem "haml"
 gem "sass"
 gem "unicorn"
+gem "nokogiri"
+gem 'rest-client'
 
 group :assets do
   gem 'sass-rails'

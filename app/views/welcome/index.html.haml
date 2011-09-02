@@ -1,4 +1,8 @@
-%h1
-  Hello There!
+%h1 Find A Picture
 
-%p Are you cool?  I am!
+= form_tag find_path do
+  = text_field_tag :query, params[:query]
+  = submit_tag "Go!"
+
+- if params[:image]
+  #result= image_tag Base64.decode64(params[:image])

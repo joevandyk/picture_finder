@@ -1,9 +1,13 @@
 !!!
 %html
   %head
-    %title Picture Finder
-    = stylesheet_link_tag    "application"
+    %title Picture Finder!
+    = stylesheet_link_tag "application"
     = csrf_meta_tags
   %body
+    - if flash[:notice]
+      .notice= flash[:notice]
+
     = yield
     = javascript_include_tag "application"
+
