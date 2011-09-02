@@ -5,9 +5,15 @@
     = stylesheet_link_tag "application"
     = csrf_meta_tags
   %body
+    %h1 Find A Picture
+
     - if flash[:notice]
       .notice= flash[:notice]
 
     = yield
+
+    #about
+      Brought to you by #{ mail_to "joe@tanga.com", "Joe" }.
+      &copy; #{ Time.now.year }
     = javascript_include_tag "application"
 
