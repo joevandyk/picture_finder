@@ -1,3 +1,3 @@
 //= require jquery
 
-$ -> alert('hello!')
+$ -> $('p').html('coffeescript/jquery works!')
