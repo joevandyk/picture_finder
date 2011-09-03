@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "rake", "0.9.2"
 gem "rails"
 gem "haml"
 gem "sass"
